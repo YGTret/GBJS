@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.play {
+  background-image: url(D:\WORK\GBJS\13\player\play-button-svgrepo-com.svg);
+  width: 100px;
+  height: 100px;
+}
+
+.pause {
+  background-image: url(D:\WORK\GBJS\13\player\pause-button-svgrepo-com.svg);
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
+
+/* Общие стили для страницы */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Контейнер для видео */
+.containerVideo {
+  position: relative;
+  width: 640px;
+  max-width: 100%;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Видео элемент */
+#videoPlayer {
+  width: 100%;
+  border-bottom: 2px solid #444;
+}
+
+/* Контейнер для кнопок управления */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Кнопки управления */
+.controlButton {
+  background: #444;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.controlButton:hover {
+  background-color: #555;
+}
+
+/* Ползунок перемотки */
+.seekBar {
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+/* Индикатор времени */
+.time {
+  color: white;
+  font-size: 14px;
+}
+
+/* Ползунок громкости */
+.volumeBar {
+  width: 100px;
+  cursor: pointer;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+/* Кнопка полноэкранного режима */
+.fullScreenButton {
+  background: #444;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.fullScreenButton:hover {
+  background-color: #555;
+}
+
+.containerVideo {
+  position: relative;
+  width: 640px;
+  max-width: 100%;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.play, .pause {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.play::before {
+  content: "▶";
+  font-size: 24px;
+}
+
+.pause::before {
+  content: "||";
+  font-size: 24px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
